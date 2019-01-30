@@ -2,8 +2,9 @@
 Enables user to visualize their own garden design as well as estimate the total cost of the garden.
 
 ## Installation:
+```console
 $ pip install -r requirements.txt
-
+```
 ## Title Page:
 <img src="https://user-images.githubusercontent.com/47154880/52005596-ac256080-24fc-11e9-88d8-9c6efec4ab38.png">
 
