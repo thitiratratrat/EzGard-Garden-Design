@@ -1,0 +1,5 @@
+Hibiscus,partial sun,3 – 6ft,moist,80,Ficon_hibiscus,F_hibiscus
+Jasmine,full sun,6ft,occasionally,150,Ficon_jasmine,F_jasmine
+Krachiao,partial sun,3-6ft,regularly,70,Ficon_krachiao,F_krachiao
+Lotus,full sun,6 – 12 inches below water,ponds,400,Ficon_lotus,F_lotus
+Sunflower,full sun,2 – 3 feet,once a week,100,Ficon_sunflower,F_sunflower

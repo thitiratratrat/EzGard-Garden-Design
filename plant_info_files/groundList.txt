@@ -1,0 +1,5 @@
+Begonia,shady,8 – 12 in,occasionally,60,Gicon_begonia,G_begonia
+Boat lily,partial to full sun,30-60cm, moist,20,Gicon_boatlily,G_boatlily
+Calathea,light shade,3ft,regularly,50,Gicon_calathea,G_calathea
+Justicia Fragilis,partial to full sun,1 – 3ft,moderately,20,Gicon_justicia,G_justicia
+Purple heart,moist soil and full sun,1-3ft, moderately,80,Gicon_purpleheart,G_purpleheart

@@ -1,0 +1,89 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_yeah(object):
+    def setupUi(self, yeah):
+        yeah.setObjectName("yeah")
+        yeah.resize(663, 403)
+        self.frame = QtWidgets.QFrame(yeah)
+        self.frame.setGeometry(QtCore.QRect(20, 20, 401, 291))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(0, 0, 401, 291))
+        self.label.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.label.setAutoFillBackground(True)
+        self.label.setText("")
+        self.label.setAcceptDrops(True)
+        self.label.setObjectName("label")
+        '''
+        self.pushButton = QtWidgets.QPushButton(yeah)
+        self.pushButton.setGeometry(QtCore.QRect(510, 90, 75, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.retranslateUi(yeah)
+        QtCore.QMetaObject.connectSlotsByName(yeah)
+        '''
+        self.b = DragButton('b', yeah)
+        self.b.setGeometry(QtCore.QRect(510, 90, 75, 23))
+
+    def retranslateUi(self, yeah):
+        _translate = QtCore.QCoreApplication.translate
+        yeah.setWindowTitle(_translate("yeah", "Start"))
+        self.pushButton.setText(_translate("yeah", "PushButton"))
+
+
+class DragButton(QtWidgets.QPushButton):
+    def __init__(self, title, parent):
+        super().__init__(title, parent)
+
+    def mousePressEvent(self, event):
+        self.__mousePressPos = None
+        self.__mouseMovePos = None
+        if event.button() == QtCore.Qt.LeftButton:
+            self.__mousePressPos = event.globalPos()
+            self.__mouseMovePos = event.globalPos()
+        # idk
+        # super(DragButton, self).mousePressEvent(event)
+
+    def mouseMoveEvent(self, event):
+        if event.buttons() == QtCore.Qt.LeftButton:
+            # adjust offset from clicked point to origin of widget
+            currPos = self.mapToGlobal(self.pos())
+            globalPos = event.globalPos()
+            diff = globalPos - self.__mouseMovePos
+            newPos = self.mapFromGlobal(currPos + diff)
+            self.move(newPos)
+            self.__mouseMovePos = globalPos
+
+        # super(DragButton, self).mouseMoveEvent(event)
+
+    '''def mouseReleaseEvent(self, event):
+        if self.__mousePressPos is not None:
+            moved = event.globalPos() - self.__mousePressPos 
+            if moved.manhattanLength() > 3:
+                event.ignore()
+                return'''
+
+    # super(DragButton, self).mouseReleaseEvent(event)
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QtWidgets.QApplication(sys.argv)
+    yeah = QtWidgets.QDialog()
+    ui = Ui_yeah()
+    ui.setupUi(yeah)
+    yeah.show()
+    sys.exit(app.exec_())
+

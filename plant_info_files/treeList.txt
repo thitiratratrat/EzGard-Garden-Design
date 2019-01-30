@@ -1,0 +1,9 @@
+African Tulip,full sun and well-drained soil,6 – 8 ft,regularly,1000,Ticon_africantulip,T_africantulip
+Banana,humid and tropical,10-12 ft,every 2-3 days,590.25,Ticon_banana,T_banana
+Cedar Deodar,full sun,20-25 ft,ocassionally,2260,Ticon_cedar,T_cedar
+Christmas Palm,full – partial sun,5 – 10ft,occasionally,490,Ticon_christmaspalm,T_christmaspalm
+Dracaena Loureiri,partial sun,2 – 3 ft,occasionally,1000,Ticon_dracaena,T_dracaena
+Lipstick Palm,full sun and high humidity,8-10 ft,regularly,490,Ticon_lipstickpalm,T_lipstickpalm
+Pindo Palm,full – partial sun,8 – 10ft, occasionally,490,Ticon_pindopalm,T_pindopalm
+Plumerias, well-drained soil and full sun,10 – 12ft,occasionally,780,Ticon_plumeria,T_plumeria
+Sylvester Palm,full sun,10 – 15ft,occasionally,490,Ticon_sylvesterpalm,T_sylvesterpalm
