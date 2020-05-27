@@ -1,5 +1,5 @@
 # EzGard-Garden-Design
-Enables user to visualize their own garden design as well as estimate the total cost of the garden.
+Gardening design program that enables user to visualize their own garden design as well as estimate the total cost of the garden.
 
 ## Installation:
 ```console
